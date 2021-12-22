@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&family=Staatliches&display=swap');
+
+/* GLOBAIS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor-1: #292929;
+    --cor-2: #00ADB5;
+    --cor-3: #BF97FF;
+    --cor-4: #EDE6E3;
+    
+    --sombra-1: rgba(0, 0, 0, 0.120);
+    --sombra-2: rgba(0, 0, 0, 0.200);
+
+    --fonte-logo: 'Staatliches', sans-serif;
+    --fonte-titulo: 'Bebas Neue', sans-serif;
+    --fonte-texto: 'Poppins', sans-serif;
+}
+
+/* BODY */
+
+body{
+    background-color: var(--cor-1);
+    font-family: var(--fonte-texto);
+}
+
+/* HEADER */
+
+header{
+    background-color: var(--sombra-1);
+    margin-bottom: 15px;
+}
+
+header > h1{
+    font-size: 5.5em;
+    font-family: var(--fonte-logo);
+    text-align: center;
+}
+
+header > h1 > a{
+    color: var(--cor-2);
+    text-decoration: none;
+}
+
+
+header > p{
+    color: var(--cor-4);
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 25px;
+}
+
+/* MENU */
+
+header menu{
+    padding: 0px 0px 23px 15px;
+}
+
+header menu nav a{
+    background-color: var(--sombra-1);
+    color: var(--cor-4);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+header menu nav a:hover{
+    padding: 17px;
+    background-color: var(--sombra-2);
+}
+
+/* MAIN */
+
+main{
+    width: 90%;
+    padding: 30px;
+    margin: auto
+}
+
+/* TÍTULOS */
+
+main h1{
+    color: var(--cor-3);
+    text-shadow: 0px 0px 2px #BF97FF;
+    padding-left: 30px;
+}
+
+/* TÓPICO */
+
+.topico{
+    min-height: 515px;
+}
+
+/* CURSO */
+
+
+.curso{
+    display: inline-block;
+    width: 21%;
+    min-width: 300px;
+    margin: 20px;
+    border: 8px solid var(--sombra-2);
+    border-radius: 15px;    
+    transition-duration: 0.5s;
+}
+
+.curso:hover{
+    width: 25%;
+    margin: 20px -2px;
+}
+
+.curso p{
+    text-align: justify;
+    padding: 7px;
+    color: var(--cor-4);
+    transition-duration: 0.6s;
+}
+
+.curso:hover p{
+    font-size: 1.1em;
+    padding: 18px;
+}
+
+.curso img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
